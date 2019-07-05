@@ -1,0 +1,20 @@
+{
+    "name": "MagicBit",
+    "version": "1.0.0",
+    "description": "Emakefun magic:bit expansion board",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*",
+        "neopixel": "github:Microsoft/pxt-neopixel#v0.6.12"
+    },
+    "files": [
+        "README.md",
+        "main.ts",
+        "_locales/zh/magicbit-strings.json"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true,
+    "preferredEditor": "tsprj"
+}
