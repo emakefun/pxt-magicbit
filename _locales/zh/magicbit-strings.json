@@ -11,7 +11,5 @@
 	"magicbit.MotorStop|block": "电机 停止|%index|",
 	"magicbit.MotorStopAll|block": "停止所有电机",
 	"magicbit.Ultrasonic|block": "超声波|引脚 %pin",
-    "magicbit.UltrasonicVer|block": "超声波|引脚 %pin|类型 %v",
-	"magicbit.MatrixDraw|block": "LED矩阵 描点|X %x|Y %y",
-	"magicbit.MatrixClear|block": "LED矩阵 清空"
+    "magicbit.UltrasonicVer|block": "超声波|引脚 %pin|版本 %v",
 }
