@@ -6,7 +6,7 @@ load dependency
 */
 
 
-//% color="#31C7D5" weight=10 icon="\uf40d"
+//% color="#31C7D5" weight=10 icon="\uf013"
 namespace magicbit {
     const PCA9685_ADDRESS = 0x40
     const MODE1 = 0x00
