@@ -11,5 +11,5 @@
 	"magicbit.MotorStop|block": "电机 停止|%index|",
 	"magicbit.MotorStopAll|block": "停止所有电机",
 	"magicbit.Ultrasonic|block": "超声波|引脚 %pin",
-	"magicbit.UltrasonicVer|block": "超声波|引脚 %pin|版本 %v",
+    "magicbit.UltrasonicVer|block": "超声波|引脚 %pin|类型 %v"
 }

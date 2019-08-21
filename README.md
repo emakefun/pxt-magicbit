@@ -1,4 +1,4 @@
-# Magic:Bit
+# magicbit
 
 Emakefun magic:bit expansion board
 

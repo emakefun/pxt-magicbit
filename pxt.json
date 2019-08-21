@@ -1,11 +1,11 @@
 {
-    "name": "MagicBit",
+    "name": "magicbit",
     "version": "1.0.0",
-    "description": "Emakefun magic:bit expansion board",
+    "description": "Emakefun magicbit expansion board",
     "license": "MIT",
     "dependencies": {
         "core": "*",
-        "neopixel": "github:Microsoft/pxt-neopixel#v0.6.12"
+        "neopixel": "github:microsoft/pxt-neopixel#v0.6.12"
     },
     "files": [
         "README.md",

@@ -1,12 +1,12 @@
 /*
-ken
+ken@emakefun.com
 modified from pxt-servo/servodriver.ts
 load dependency
 "magicbit": "file:../pxt-magicbit"
 */
 
 
-//% color="#31C7D5" weight=10 icon="\uf013"
+//% color="#EE6A50" weight=10 icon="\uf013"
 namespace magicbit {
     const PCA9685_ADDRESS = 0x40
     const MODE1 = 0x00
@@ -412,9 +412,8 @@ namespace magicbit {
         // send pulse
         if (v == SonarVersion.V1) {
             pins.setPull(pin, PinPullMode.PullNone);
-        } else {
-            pins.setPull(pin, PinPullMode.PullDown);
         }
+        else { pins.setPull(pin, PinPullMode.PullDown); }
         pins.digitalWritePin(pin, 0);
         control.waitMicros(2);
         pins.digitalWritePin(pin, 1);
