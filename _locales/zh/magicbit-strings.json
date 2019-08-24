@@ -29,5 +29,8 @@
     "ColorEffect.Rotate|block": "旋转流星",
     "ColorEffect.Flash|block": "闪烁",
     "magicbit.RUS_04|block": "RGB超声波|%RgbUltrasonics|显示颜色%rgb|特效%effect",
-    "magicbit.rgb|block": "板载RGB"
+    "magicbit.rgb|block": "板载RGB",
+    "IrRemote|block": "红外",
+    "IrRemote.init|block": "红外遥控器初始化引脚|%pin",
+    "IrRemote.onPressEvent|block": "当红外遥控器按键|%btn|按下"
 }
