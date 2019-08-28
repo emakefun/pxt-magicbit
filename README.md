@@ -1,7 +1,7 @@
 # MagicBit
 [中文版](README_zh.md)
 
-Emakefun magicbit expansion board for micro:bit
+[E](www.emakefun.com) magicbit expansion board for micro:bit
 ![image](icon.png)
 
 ## Feature
