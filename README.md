@@ -1,21 +1,46 @@
-# magicbit
+# MagicBit
+[中文版](README_zh.md)
+Emakefun magicbit expansion board for micro:bit
+![image](icon.png)
 
-Emakefun magic:bit expansion board
+## Feature
 
-## TODO
+- Designed for robotic projects over microbit
+- On board battery source with usb charger
+- Drive 8x servos and 4x DC motors and the same time (with 3.7v battery source to VM)
+- Drive 2x Micro Stepper Motors
+- On board buzzer
+- On board 4x RGB Neo Pixels
+- On board ir receiver
+- 2xPH2.0-4Pin for i2c port and rgbultrasonic
+- 4xPH2.0-2Pin for DC motors
 
-- [ ] Add a reference for your blocks here
-- [ ] Add "icon.png" image (300x200) in the root folder
-- [ ] Add "- beta" to the GitHub project description if you are still iterating it.
-- [ ] Turn on your automated build on https://travis-ci.org
-- [ ] Use "pxt bump" to create a tagged release on GitHub
-- [ ] On GitHub, create a new file named LICENSE. Select the MIT License template.
-- [ ] Get your package reviewed and approved https://makecode.microbit.org/extensions/approval
+## Hardware Preview
+### Front
+![image](https://github.com/emakefun/emakefun-docs/tree/master/docs/micro_bit/magic_bit/magicbit_hardware_front.png)
 
-Read more at https://makecode.microbit.org/extensions
+### Back
+![image](https://github.com/emakefun/emakefun-docs/tree/master/docs/micro_bit/magic_bit/magicbit_hardware_back.png)
+
+## Blocks Preview
+### magicbit blocks
+![image](https://github.com/emakefun/emakefun-docs/tree/master/docs/micro_bit/magic_bit/magicbit_block.png)
+
+### on board rgb blocks
+![image](https://github.com/emakefun/emakefun-docs/tree/master/docs/micro_bit/magic_bit/rgb_block.png)
+![image](https://github.com/emakefun/emakefun-docs/tree/master/docs/micro_bit/magic_bit/rgb_more_block.png)
+
+### ir blocks
+![image](https://github.com/emakefun/emakefun-docs/tree/master/docs/micro_bit/magic_bit/ir_block.png)
+
+## License
+MIT
 
 ## Supported targets
 
 * for PXT/microbit
 (The metadata above is needed for package search.)
 
+```package
+robotbit=github:emakefun/pxt-magicbit
+```
