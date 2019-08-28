@@ -1,5 +1,6 @@
 # MagicBit
 [中文版](README_zh.md)
+
 Emakefun magicbit expansion board for micro:bit
 ![image](icon.png)
 
@@ -17,21 +18,21 @@ Emakefun magicbit expansion board for micro:bit
 
 ## Hardware Preview
 ### Front
-![image](https://github.com/emakefun/emakefun-docs/tree/master/docs/micro_bit/magic_bit/magicbit_hardware_front.png)
+![image](https://github.com/emakefun/emakefun-docs/raw/master/docs/micro_bit/magic_bit/magicbit_hardware_front.png)
 
 ### Back
-![image](https://github.com/emakefun/emakefun-docs/tree/master/docs/micro_bit/magic_bit/magicbit_hardware_back.png)
+![image](https://github.com/emakefun/emakefun-docs/raw/master/docs/micro_bit/magic_bit/magicbit_hardware_back.png)
 
 ## Blocks Preview
 ### magicbit blocks
-![image](https://github.com/emakefun/emakefun-docs/tree/master/docs/micro_bit/magic_bit/magicbit_block.png)
+![image](https://github.com/emakefun/emakefun-docs/raw/master/docs/micro_bit/magic_bit/magicbit_block.png)
 
 ### on board rgb blocks
-![image](https://github.com/emakefun/emakefun-docs/tree/master/docs/micro_bit/magic_bit/rgb_block.png)
-![image](https://github.com/emakefun/emakefun-docs/tree/master/docs/micro_bit/magic_bit/rgb_more_block.png)
+![image](https://github.com/emakefun/emakefun-docs/raw/master/docs/micro_bit/magic_bit/rgb_block.png)
+![image](https://github.com/emakefun/emakefun-docs/raw/master/docs/micro_bit/magic_bit/rgb_more_block.png)
 
 ### ir blocks
-![image](https://github.com/emakefun/emakefun-docs/tree/master/docs/micro_bit/magic_bit/ir_block.png)
+![image](https://github.com/emakefun/emakefun-docs/raw/master/docs/micro_bit/magic_bit/ir_block.png)
 
 ## License
 MIT

@@ -1,5 +1,6 @@
 # MagicBit
 [English](README.md)
+
 兼容micro:bit多功能电机驱动扩展板 [深圳市易创空间科技有限公司](www.emakefun.com)出品
 
 ![image](icon.png)
@@ -20,21 +21,21 @@
 
 ## 硬件功能介绍
 ### 正面
-![image](https://github.com/emakefun/emakefun-docs/tree/master/docs/micro_bit/magic_bit/magicbit_hardware_front_zh.png)
+![image](https://github.com/emakefun/emakefun-docs/raw/master/docs/micro_bit/magic_bit/magicbit_hardware_front_zh.png)
 
 ### 背面
-![image](https://github.com/emakefun/emakefun-docs/tree/master/docs/micro_bit/magic_bit/magicbit_hardware_back_zh.png)
+![image](https://github.com/emakefun/emakefun-docs/raw/master/docs/micro_bit/magic_bit/magicbit_hardware_back_zh.png)
 
 ## 图像化编程块说明
 ### magicbit编程图形块
-![image](https://github.com/emakefun/emakefun-docs/tree/master/docs/micro_bit/magic_bit/magicbit_block_zh.png)
+![image](https://github.com/emakefun/emakefun-docs/raw/master/docs/micro_bit/magic_bit/magicbit_block_zh.png)
 
 ### 板载RGB编程图形块
-![image](https://github.com/emakefun/emakefun-docs/tree/master/docs/micro_bit/magic_bit/rgb_block_zh.png)
-![image](https://github.com/emakefun/emakefun-docs/tree/master/docs/micro_bit/magic_bit/rgb_more_block_zh.png)
+![image](https://github.com/emakefun/emakefun-docs/raw/master/docs/micro_bit/magic_bit/rgb_block_zh.png)
+![image](https://github.com/emakefun/emakefun-docs/raw/master/docs/micro_bit/magic_bit/rgb_more_block_zh.png)
 
 ### 红外接收编程图形块
-![image](https://github.com/emakefun/emakefun-docs/tree/master/docs/micro_bit/magic_bit/ir_block_zh.png)
+![image](https://github.com/emakefun/emakefun-docs/raw/master/docs/micro_bit/magic_bit/ir_block_zh.png)
 
 ## 开源许可
 MIT
