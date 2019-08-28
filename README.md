@@ -43,5 +43,5 @@ MIT
 (The metadata above is needed for package search.)
 
 ```package
-robotbit=github:emakefun/pxt-magicbit
+magicbit=github:emakefun/pxt-magicbit
 ```

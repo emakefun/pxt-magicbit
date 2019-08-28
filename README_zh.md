@@ -1,7 +1,7 @@
 # MagicBit
-[English](README.md)
+[English](README.md) 中文版
 
-兼容micro:bit多功能电机驱动扩展板 [深圳市易创空间科技有限公司](www.emakefun.com)出品
+micro:bit多功能电机驱动扩展板   [深圳市易创空间科技有限公司](www.emakefun.com)出品
 
 ![image](icon.png)
 
@@ -9,12 +9,11 @@
 
 - 专为micro:bit设计的兼容乐高积木的机器人多功能扩展板
 - 板载micro-usb接口充电器和3.7V锂电池座
-- 同时支持驱动8路舵机和4路直流电机，直接板载电池供电
-- Drive 8x servos and 4x DC motors and the same time (with 3.7v battery source to VM)
+- 同时支持驱动8路舵机和4路直流电机
 - 支持驱动2路4线步进电机
-- 板子无源蜂鸣器
-- 板子4个RGB全彩灯
-- 板子红外接收头
+- 板载无源蜂鸣器
+- 板载4个RGB全彩灯
+- 板载红外接收头
 - 1个PH2.0-4Pin i2c接口 
 - 1个PH2.0-4Pin Rgb超声波（RUS-04)模块接口
 - 4个PH2.0-2Pin 直流电机接口（也可以连接到排针上）
