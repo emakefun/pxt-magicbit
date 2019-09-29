@@ -90,15 +90,15 @@ namespace magicbit {
     }
 
     export enum Motors {
-        M1 = 0x1,
-        M2 = 0x2,
-        M3 = 0x3,
-        M4 = 0x4
+        M1 = 0x3,
+        M2 = 0x4,
+        M3 = 0x1,
+        M4 = 0x2
     }
 
     export enum Steppers {
-        STPM1 = 0x1,
-        STPM2 = 0x2
+        STPM1 = 0x2,
+        STPM2 = 0x1
     }
 
     export enum SonarVersion {
