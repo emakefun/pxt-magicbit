@@ -1,5 +1,6 @@
 {
-	"magicbit.Servo|block": "舵机|%index|角度 %degree",
+    "magicbit.Servo|block": "舵机|%index|角度 %degree",
+    "magicbit.Servospeed|block": "舵机|%index|开始角度 %degree1|结束角度 %degree2|旋转速度 %speed",
 	"magicbit.StepperDegree|block": "步进电机 28BYJ-48|%index|角度 %degree",
 	"magicbit.StepperTurn|block": "步进电机 28BYJ-48|%index|圈数 %turn",
 	"magicbit.StepperDual|block": "双步进(角度) |STPM1 %degree1| STPM2 %degree2",

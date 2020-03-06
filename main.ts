@@ -227,9 +227,9 @@ namespace magicbit {
      * @param index Servo Channel; eg: S1
      * @param degree [0-180] degree of servo; eg: 0, 90, 180
     */
-    //% blockId=magicbit_servo block="Servo|%index|degree %degree"
+    //% blockId=magicbit_servo block="Servo|%index|degree %degree=protractorPicker"
     //% weight=100
-    //% degree.min=0 degree.max=180
+    //% degree.defl=90
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function Servo(index: Servos, degree: number): void {
         if (!initialized) {
@@ -241,15 +241,53 @@ namespace magicbit {
         setPwm(index + 7, 0, value)
     }
 
+/**
+     * Servo Execute
+     * @param index Servo Channel; eg: S1
+     * @param degree1 [0-180] degree of servo; eg: 0, 90, 180
+	 * @param degree2 [0-180] degree of servo; eg: 0, 90, 180
+	 * @param speed [1-10] speed of servo; eg: 1, 10
+    */
+    //% blockId=motorbit_servospeed block="Servo|%index|degree start %degree1=protractorPicker|end %degree2=protractorPicker|speed %speed"
+    //% weight=98
+    //% degree1.defl=90
+    //% degree2.defl=90
+    //% speed.min=1 speed.max=10
+    //% inlineInputMode=inline
+    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
+    export function Servospeed(index: Servos, degree1: number, degree2: number, speed: number): void {
+        if (!initialized) {
+            initPCA9685()
+        }
+        // 50hz: 20,000 us
+        if(degree1 > degree2){
+            for(let i=degree1;i>degree2;i--){
+                let v_us = (i * 1800 / 180 + 600) // 0.6 ~ 2.4
+                let value = v_us * 4096 / 20000
+                basic.pause(4 * (10 - speed));
+                setPwm(index + 7, 0, value)
+            }
+        }
+        else{
+            for(let i=degree1;i<degree2;i++){
+                let v_us = (i * 1800 / 180 + 600) // 0.6 ~ 2.4
+                let value = v_us * 4096 / 20000
+                basic.pause(4 * (10 - speed));
+                setPwm(index + 7, 0, value)
+            }
+        }
+    }
+
+
     /**
      * Geek Servo
      * @param index Servo Channel; eg: S1
      * @param degree [-45-225] degree of servo; eg: -45, 90, 225
     */
-    //% blockId=magicbit_gservo block="Geek Servo|%index|degree %degree"
-    //% weight=99
+    //% blockId=magicbit_gservo block="Geek Servo|%index|degree %degree=protractorPicker"
+    //% weight=96
     //% blockGap=50
-    //% degree.min=-45 degree.max=225
+    //% degree.defl=90
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function GeekServo(index: Servos, degree: number): void {
         if (!initialized) {
@@ -260,7 +298,6 @@ namespace magicbit {
         let value = v_us * 4096 / 20000
         setPwm(index + 7, 0, value)
     }
-
     //% blockId=magicbit_stepper_degree block="Stepper 28BYJ-48|%index|degree %degree"
     //% weight=90
     export function StepperDegree(index: Steppers, degree: number): void {
@@ -382,6 +419,7 @@ namespace magicbit {
     //% weight=84
     //% speed1.min=-255 speed1.max=255
     //% speed2.min=-255 speed2.max=255
+    //% inlineInputMode=inline
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function MotorRunDual(motor1: Motors, speed1: number, motor2: Motors, speed2: number): void {
         MotorRun(motor1, speed1);
