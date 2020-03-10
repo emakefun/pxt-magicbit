@@ -227,9 +227,9 @@ namespace magicbit {
      * @param index Servo Channel; eg: S1
      * @param degree [0-180] degree of servo; eg: 0, 90, 180
     */
-    //% blockId=magicbit_servo block="Servo|%index|degree %degree=protractorPicker"
+    //% blockId=magicbit_servo block="Servo|%index|degree %degree"
     //% weight=100
-    //% degree.defl=90
+    //% degree.min=0 degree.max=180
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function Servo(index: Servos, degree: number): void {
         if (!initialized) {
@@ -248,10 +248,10 @@ namespace magicbit {
 	 * @param degree2 [0-180] degree of servo; eg: 0, 90, 180
 	 * @param speed [1-10] speed of servo; eg: 1, 10
     */
-    //% blockId=motorbit_servospeed block="Servo|%index|degree start %degree1=protractorPicker|end %degree2=protractorPicker|speed %speed"
+    //% blockId=motorbit_servospeed block="Servo|%index|degree start %degree1|end %degree2|speed %speed"
     //% weight=98
-    //% degree1.defl=90
-    //% degree2.defl=90
+    //% degree1.min=0 degree1.max=180
+    //% degree2.min=0 degree2.max=180
     //% speed.min=1 speed.max=10
     //% inlineInputMode=inline
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
