@@ -1,5 +1,5 @@
 //% color="#EE6A50" weight=10 icon="\uf085"
-namespace motorbit {
+namespace magicbit {
 	const PCA9685_ADDRESS = 0x40
 	const MODE1 = 0x00
 	const MODE2 = 0x01
