@@ -11,6 +11,7 @@
         "main.ts",
         "enums.d.ts",
         "ir.cpp",
+        "sendbuffer.asm",
         "TransmitterIR.cpp",
         "TransmitterIR.h",
         "_locales/zh/magicbit-strings.json"
