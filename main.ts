@@ -431,7 +431,26 @@ namespace motorbit {
 		MotorRun(motor2, speed2);
 	}
 
-
+/**
+	 * Execute two motors at the same time
+	 * @param motor1 First Motor; eg: A01A02, B01B02
+	 * @param speed1 [-255-255] speed of motor; eg: 150, -150
+	 * @param motor2 Second Motor; eg: A03A04, B03B04
+	 * @param speed2 [-255-255] speed of motor; eg: 150, -150
+	*/
+	//% blockId=motorbit_motor_dualDelay block="Motor|%motor1|speed %speed1|%motor2|speed %speed2|delay %delay|s "
+	//% weight=85
+	//% inlineInputMode=inline
+	//% speed1.min=-255 speed1.max=255
+	//% speed2.min=-255 speed2.max=255
+	//% name.fieldEditor="gridpicker" name.fieldOptions.columns=5
+	export function MotorRunDualDelay(motor1: Motors, speed1: number, motor2: Motors, speed2: number, delay: number): void {
+		MotorRun(motor1, speed1);
+		MotorRun(motor2, speed2);
+		basic.pause(delay * 1000);
+		MotorRun(motor1, 0);
+		MotorRun(motor2, 0);
+	}
 	
 
    

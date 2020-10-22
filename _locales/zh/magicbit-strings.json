@@ -33,5 +33,6 @@
     "magicbit.rgb|block": "板载RGB",
     "IrRemote|block": "红外",
     "IrRemote.init|block": "红外遥控器初始化引脚|%pin",
-    "IrRemote.onPressEvent|block": "当红外遥控器按键|%btn|按下"
+    "IrRemote.onPressEvent|block": "当红外遥控器按键|%btn|按下",
+    "magicbit.MotorRunDualDelay|block": "电机|%motor1|速度 %speed1|%motor2|速度 %speed2|延时 %delay|s"
 }
