@@ -439,7 +439,7 @@ namespace magicbit {
 	 * @param speed2 [-255-255] speed of motor; eg: 150, -150
 	*/
 	//% blockId=motorbit_motor_dualDelay block="Motor|%motor1|speed %speed1|%motor2|speed %speed2|delay %delay|s "
-	//% weight=85
+	//% weight=79
 	//% inlineInputMode=inline
 	//% speed1.min=-255 speed1.max=255
 	//% speed2.min=-255 speed2.max=255
