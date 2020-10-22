@@ -1,7 +1,7 @@
 {
     "name": "magicbit",
     "version": "1.0.0",
-    "description": "Emakefun magicbit expansion board",
+    "description": "magicbit emakefun",
     "license": "MIT",
     "dependencies": {
         "core": "*"
@@ -11,7 +11,7 @@
         "main.ts",
         "enums.d.ts",
         "ir.cpp",
-        "sendbuffer.asm",
+		"sendbuffer.asm",
         "TransmitterIR.cpp",
         "TransmitterIR.h",
         "_locales/zh/magicbit-strings.json"
