@@ -116,9 +116,9 @@ namespace IrRemote {
   /**
   * initialises local variablesssss
   */
-  //% blockId=init
+  //% blockId=IrRemote_init
   //% block="connect ir receiver to %pin"
-  void init(Pins pin){
+  void IrRemote_init(Pins pin){
     rx = new ReceiverIR((PinName)pin);
     tsb.start(); //interrupt timer for debounce
     create_fiber(monitorIR);

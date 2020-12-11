@@ -16,8 +16,8 @@ declare namespace IrRemote {
     /**
      * initialises local variablesssss
      */
-    //% blockId=init
-    //% block="connect ir receiver to %pin" shim=IrRemote::init
+    //% blockId=IrRemote_init
+    //% block="connect ir receiver to %pin" shim=IrRemote::IrRemote_init
     function IrRemote_init(pin: Pins): void;
 }
 
