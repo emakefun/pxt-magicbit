@@ -7,45 +7,45 @@ load dependency
 
 enum RgbColors {
         //% block=red
-        Red = 0xFF0000,
+        red = 0xFF0000,
         //% block=orange
-        Orange = 0xFFA500,
+        orange = 0xFFA500,
         //% block=yellow
-        Yellow = 0xFFFF00,
+        yellow = 0xFFFF00,
         //% block=green
-        Green = 0x00FF00,
+        green = 0x00FF00,
         //% block=blue
-        Blue = 0x0000FF,
+        blue = 0x0000FF,
         //% block=indigo
-        Indigo = 0x4b0082,
+        indigo = 0x4b0082,
         //% block=violet
-        Violet = 0x8a2be2,
+        violet = 0x8a2be2,
         //% block=purple
-        Purple = 0xFF00FF,
+        purple = 0xFF00FF,
         //% block=white
-        White = 0xFFFFFF,
+        white = 0xFFFFFF,
         //% block=black
-        Black = 0x000000
+        black = 0x000000
 }
 
 enum RgbUltrasonics {
     //% block=left
-    Left = 0x00,
+    left = 0x00,
     //% block=right
-    Right = 0x01,
+    right = 0x01,
     //% block=all
-    All = 0x02
+    all = 0x02
 }
 
 enum ColorEffect {
     //% block=none
-    None = 0x00,
+    none = 0x00,
     //% block=breathing
-    Breathing = 0x01,
+    breathing = 0x01,
     //% block=rotate
-    Rotate = 0x02,
+    rotate = 0x02,
     //% block=flash
-    Flash = 0x03
+    flash = 0x03
 }
 
 //% color="#EE6A50" weight=10 icon="\uf013"
@@ -512,21 +512,21 @@ namespace magicbit {
         if (!neoStrip) {
             neoStrip = neopixel.create(DigitalPin.P16, 10, NeoPixelMode.RGB)
         }
-        if (index == RgbUltrasonics.Left) {
+        if (index == RgbUltrasonics.left) {
             start = 4;
             end = 6;
-        } else if (index == RgbUltrasonics.Right) {
+        } else if (index == RgbUltrasonics.right) {
             start = 7;
             end = 9;
-		} else if (index == RgbUltrasonics.All) {
+		} else if (index == RgbUltrasonics.all) {
             start = 4;
             end = 9;
 		}
         switch(effect) {
-            case ColorEffect.None:
+            case ColorEffect.none:
                 RgbDisplay(start, end, rgb);
                 break;
-            case ColorEffect.Breathing:
+            case ColorEffect.breathing:
             for (let i = 0; i < 255; i+=2) {
                 neoStrip.setBrightness(i);
                 RgbDisplay(start, end, rgb);
@@ -539,12 +539,12 @@ namespace magicbit {
                 basic.pause((i < 20)? 80 :(255/i));
             }
             break;
-            case ColorEffect.Rotate:
+            case ColorEffect.rotate:
                 for (let i = 0; i < 4; i++) {
                     neoStrip.setPixelColor(start, rgb);
                     neoStrip.setPixelColor(start+1, 0);
                     neoStrip.setPixelColor(start+2, 0);
-                    if (index == RgbUltrasonics.All) {
+                    if (index == RgbUltrasonics.all) {
                         neoStrip.setPixelColor(end-2, rgb);
                         neoStrip.setPixelColor(end-1, 0);
                         neoStrip.setPixelColor(end, 0);
@@ -554,7 +554,7 @@ namespace magicbit {
                     neoStrip.setPixelColor(start, 0);
                     neoStrip.setPixelColor(start+1, rgb);
                     neoStrip.setPixelColor(start+2, 0);
-                    if (index == RgbUltrasonics.All) {
+                    if (index == RgbUltrasonics.all) {
                         neoStrip.setPixelColor(end-2, 0);
                         neoStrip.setPixelColor(end-1, rgb);
                         neoStrip.setPixelColor(end, 0);
@@ -564,7 +564,7 @@ namespace magicbit {
                     neoStrip.setPixelColor(start, 0);
                     neoStrip.setPixelColor(start+1, 0);
                     neoStrip.setPixelColor(start+2, rgb);
-                    if (index == RgbUltrasonics.All) {
+                    if (index == RgbUltrasonics.all) {
                         neoStrip.setPixelColor(end-2, 0);
                         neoStrip.setPixelColor(end-1, 0);
                         neoStrip.setPixelColor(end, rgb);
@@ -574,7 +574,7 @@ namespace magicbit {
                 }
                 RgbDisplay(4, 9, 0);
                 break;
-            case ColorEffect.Flash:
+            case ColorEffect.flash:
             for (let i = 0; i < 6; i++) {
                 RgbDisplay(start, end, rgb);
                 basic.pause(150);
