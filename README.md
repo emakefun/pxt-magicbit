@@ -28,6 +28,7 @@
 ![image](https://github.com/emakefun/emakefun-docs/raw/master/docs/micro_bit/magic_bit/magicbit_block.png)
 
 ### on board rgb blocks
+add block link  https://github.com/microsoft/pxt-neopixel
 ![image](https://github.com/emakefun/emakefun-docs/raw/master/docs/micro_bit/magic_bit/rgb_block.png)
 ![image](https://github.com/emakefun/emakefun-docs/raw/master/docs/micro_bit/magic_bit/rgb_more_block.png)
 
