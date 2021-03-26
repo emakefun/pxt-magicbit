@@ -33,5 +33,12 @@
     "magicbit.rgb|block": "板载RGB",
     "IrRemote|block": "红外",
     "IrRemote.IrRemote_init|block": "红外遥控器初始化引脚|%pin",
-    "IrRemote.onPressEvent|block": "当红外遥控器按键|%btn|按下"
+    "IrRemote.onPressEvent|block": "当红外遥控器按键|%btn|按下",
+    "Offset.ONE|block": "第一个灯",
+    "Offset.TWO|block": "第二个灯",
+    "Offset.THREE|block": "第三个灯",
+    "Offset.FOUR|block": "第四个灯",
+    "magicbit.Ultrasonic_reading_distance|block": "板载超声波读取距离",
+    "magicbit.Setting_the_on_board_lights|block": "设置板载灯 %offset 颜色 %rgb 特效 %effect",
+    "magicbit.motorbit_rus04|block": "板载超声波选择彩灯%index选择颜色%rgb选择效果%effect"
 }
