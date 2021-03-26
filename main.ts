@@ -428,7 +428,7 @@ namespace magicbit {
 //% blockId="motorbit_rus04" block="On-board Ultrasonic part %index show color %rgb effect %effect" 
 //% weight=78
 export function motorbit_rus04(index: RgbUltrasonics, rgb: RgbColors, effect: ColorEffect): void {
-    sensors.rus04_rgb(DigitalPin.P16, 0, index, rgb, effect);
+    sensors.rus04_rgb(DigitalPin.P16, 4, index, rgb, effect);
 }
     
 //% blockId=Ultrasonic_reading_distance block="On-board Ultrasonic reading distance"
