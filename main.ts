@@ -92,9 +92,6 @@ namespace magicbit {
     }
 
     let initialized = false
-    let neoStrip: neopixel.Strip;
-    let matBuf = pins.createBuffer(17);
-    let distanceBuf = 0;
 
     function i2cwrite(addr: number, reg: number, value: number) {
         let buf = pins.createBuffer(2)
