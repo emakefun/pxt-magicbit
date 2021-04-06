@@ -2,8 +2,8 @@
 
 
 
-    //% color=50 weight=19 icon="\uf1eb"
-    //% block="IrRemote"
+//% color=50 weight=19 icon="\uf1eb"
+//% block="IrRemote"
 declare namespace IrRemote {
 
     /**
@@ -19,6 +19,13 @@ declare namespace IrRemote {
     //% blockId=IrRemote_init
     //% block="connect ir receiver to %pin" shim=IrRemote::IrRemote_init
     function IrRemote_init(pin: Pins): void;
+
 }
+
+//% color=50 weight=80
+//% icon="\uf1eb"
+declare namespace maqueenIRV2 {
+}
+
 
 // Auto-generated. Do not edit. Really.

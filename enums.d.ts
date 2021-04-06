@@ -70,5 +70,6 @@
     }
 declare namespace IrRemote {
 }
-
+declare namespace maqueenIRV2 {
+}
 // Auto-generated. Do not edit. Really.

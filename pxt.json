@@ -18,7 +18,8 @@
         "RemoteIR.h",
         "TransmitterIR.cpp",
         "TransmitterIR.h",
-        "_locales/zh/magicbit-strings.json"
+        "_locales/zh/magicbit-strings.json",
+        "NecIR.cpp"
     ],
     "testFiles": [
         "test.ts"
