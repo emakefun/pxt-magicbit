@@ -86,8 +86,7 @@ namespace IrRemote {
   /**
   * button pushed.
   */
-  //% blockId=onPressEvent
-  //% block="on |%btn| button pressed"
+  //%
   void onPressEvent(RemoteButton btn, Action body) {
     //if(actions.find(btn) == actions.end()) actions[btn] = new vector();
     actions[btn].push_back(body);
@@ -116,8 +115,7 @@ namespace IrRemote {
   /**
   * initialises local variablesssss
   */
-  //% blockId=IrRemote_init
-  //% block="connect ir receiver to %pin"
+  //%
   void IrRemote_init(Pins pin){
     rx = new ReceiverIR((PinName)pin);
     tsb.start(); //interrupt timer for debounce

@@ -32,8 +32,8 @@
     "magicbit.RUS_04|block": "RGB超声波|%RgbUltrasonics|显示颜色%rgb|特效%effect",
     "magicbit.rgb|block": "板载RGB",
     "IrRemote|block": "红外",
-    "IrRemote.IrRemote_init|block": "红外遥控器初始化引脚|%pin",
-    "IrRemote.onPressEvent|block": "当红外遥控器按键|%btn|按下",
+    "magicbit.IrRemote_init|block": "红外遥控器初始化引脚|%pin",
+    "magicbit.OnPressEvent|block": "当红外遥控器按键|%btn|按下",
     "Offset.ONE|block": "第一个灯",
     "Offset.TWO|block": "第二个灯",
     "Offset.THREE|block": "第三个灯",
@@ -69,5 +69,5 @@
     "IrRemote.Voltage.Low|block":"低",
     "IrRemote.ltEvent|block":"当|%value巡线传感器|%vi",
     "magicbit.IR_callbackUserV2|block": "当接收到红外时运行",
-    "magicbit.IR_readV2|block": "红外的值"
+    "magicbit.IR_readV2|block": "红外接收的值"
 }
