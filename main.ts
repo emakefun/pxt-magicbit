@@ -564,6 +564,7 @@ function irCode(): number {
 //% group="micro:bit(v2)"
 //% blockId=IR_readv2 block="read IR key value"
 export function IR_readV2(): string {
+    pins.setPull(DigitalPin.P1, PinPullMode.PullUp);
     let val = valuotokeyConversion();
     let str;
     switch (val) {
@@ -599,6 +600,7 @@ export function IR_readV2(): string {
 //% blockId=IR_callbackUserv2 block="on IR received"
 //% draggableParameters
 export function IR_callbackUserV2(cb: (message: string) => void) {
+    pins.setPull(DigitalPin.P1, PinPullMode.PullUp);
     state = 1;
     control.onEvent(11, 22, function() {
         cb(irstate)
@@ -607,6 +609,7 @@ export function IR_callbackUserV2(cb: (message: string) => void) {
 
 function valuotokeyConversion(): number {
     let irdata: number;
+    basic.showString("" + (irCode()))
     switch (irCode()) {
         case 0xba45: irdata = 11; break;
         case 0xb946: irdata = 12; break;
