@@ -589,8 +589,8 @@ export function IR_readV2(): string {
         case 7: str = '7'; break;
         case 8: str = '8'; break;
         case 9: str = '9'; break;
-        default:
-            str = '-1';
+//         default:
+//             str = '-1';
     }
     return str;
 }
