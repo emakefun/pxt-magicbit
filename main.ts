@@ -609,7 +609,7 @@ export function IR_callbackUserV2(cb: (message: string) => void) {
 
 function valuotokeyConversion(): number {
     let irdata: number;
-    basic.showString("" + (irCode()))
+    // basic.showString("" + (irCode()))
     switch (irCode()) {
         case 0xba45: irdata = 11; break;
         case 0xb946: irdata = 12; break;
