@@ -11,7 +11,7 @@
         "README.md",
         "main.ts",
         "shims.d.ts",
-        "_locales/zh/magicbit-strings.json",
+        "_locales/zh/magicbit-strings.json"
     ],
     "testFiles": [
         "test.ts"
