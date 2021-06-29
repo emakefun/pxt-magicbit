@@ -11,7 +11,15 @@
         "README.md",
         "main.ts",
         "shims.d.ts",
-        "_locales/zh/magicbit-strings.json"
+        
+        "ir.cpp",
+        "ReceiverIR.cpp",
+        "ReceiverIR.h",
+        "RemoteIR.h",
+        "TransmitterIR.cpp",
+        "TransmitterIR.h",
+        "_locales/zh/magicbit-strings.json",
+        "NecIR.cpp"
     ],
     "testFiles": [
         "test.ts"
