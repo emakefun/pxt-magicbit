@@ -11,7 +11,7 @@
         "README.md",
         "main.ts",
         "shims.d.ts",
-        "enums.d.ts",
+      
     
         "ReceiverIR.cpp",
         "ReceiverIR.h",
