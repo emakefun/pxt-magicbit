@@ -4,7 +4,8 @@
     "description": "Emakefun magicbit expansion board",
     "license": "MIT",
     "dependencies": {
-        "core": "*"
+        "core": "*",
+        "Sensorbit": "github:emakefun/pxt-sensorbit"
     },
     "files": [
         "README.md",
