@@ -426,25 +426,23 @@ namespace magicbit {
         }
     }
 
-//% blockId="motorbit_rus04" block="On-board Ultrasonic part %index show color %rgb effect %effect" 
-//% weight=78
-export function motorbit_rus04(index: RgbUltrasonics, rgb: RgbColors, effect: ColorEffect): void {
-    sensors.board_rus04_rgb(DigitalPin.P16, 4, index, rgb, effect);
-}
+	//% blockId="motorbit_rus04" block="On-board Ultrasonic part %index show color %rgb effect %effect" 
+	//% weight=78
+	export function motorbit_rus04(index: RgbUltrasonics, rgb: RgbColors, effect: ColorEffect): void {
+	    sensors.board_rus04_rgb(DigitalPin.P16, 4, index, rgb, effect);
+	}
     
-//% blockId=Ultrasonic_reading_distance block="On-board Ultrasonic reading distance"
-//% weight=77
+	//% blockId=Ultrasonic_reading_distance block="On-board Ultrasonic reading distance"
+	//% weight=77
+	export function Ultrasonic_reading_distance(): number {
+	    return sensors.Ultrasonic(DigitalPin.P2);
+	}
 
-export function Ultrasonic_reading_distance(): number {
-    return sensors.Ultrasonic(DigitalPin.P2);
-}
 
-
-//% blockId=Setting_the_on_board_lights block="Setting the on-board lights %index color %rgb Effect %effect"
-//% weight=76
-
-export function Setting_the_on_board_lights(offset: Offset,rgb: RgbColors, effect: rgb_ColorEffect): void {
- sensors.board_rus04_rgb(DigitalPin.P16, offset, 0, rgb, effect);
-}
+	//% blockId=Setting_the_on_board_lights block="Setting the on-board lights %index color %rgb Effect %effect"
+	//% weight=76
+	export function Setting_the_on_board_lights(offset: Offset,rgb: RgbColors, effect: rgb_ColorEffect): void {
+	 sensors.board_rus04_rgb(DigitalPin.P16, offset, 0, rgb, effect);
+	}
 	
 }
