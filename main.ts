@@ -206,10 +206,10 @@ namespace magicbit {
         setPwm(index + 7, 0, value)
     }
 
-/**
-     * Servo Execute
-     * @param index Servo Channel; eg: S1
-     * @param degree1 [0-180] degree of servo; eg: 0, 90, 180
+   /**
+         * Servo Execute
+         * @param index Servo Channel; eg: S1
+         * @param degree1 [0-180] degree of servo; eg: 0, 90, 180
 	 * @param degree2 [0-180] degree of servo; eg: 0, 90, 180
 	 * @param speed [1-10] speed of servo; eg: 1, 10
     */
@@ -244,25 +244,26 @@ namespace magicbit {
     }
 
 
-    /**
-     * Geek Servo
-     * @param index Servo Channel; eg: S1
-     * @param degree [-45-225] degree of servo; eg: -45, 90, 225
-    */
-    //% blockId=magicbit_gservo block="Geek Servo|%index|degree %degree=protractorPicker"
-    //% weight=96
-    //% blockGap=50
-    //% degree.defl=90
-    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-    export function GeekServo(index: Servos, degree: number): void {
-        if (!initialized) {
-            initPCA9685()
-        }
-        // 50hz: 20,000 us
-        let v_us = ((degree - 90) * 20 / 3 + 1500) // 0.6 ~ 2.4
-        let value = v_us * 4096 / 20000
-        setPwm(index + 7, 0, value)
-    }
+//     /**
+//      * Geek Servo
+//      * @param index Servo Channel; eg: S1
+//      * @param degree [-45-225] degree of servo; eg: -45, 90, 225
+//     */
+//     //% blockId=magicbit_gservo block="Geek Servo|%index|degree %degree=protractorPicker"
+//     //% weight=96
+//     //% blockGap=50
+//     //% degree.defl=90
+//     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
+//     export function GeekServo(index: Servos, degree: number): void {
+//         if (!initialized) {
+//             initPCA9685()
+//         }
+//         // 50hz: 20,000 us
+//         let v_us = ((degree - 90) * 20 / 3 + 1500) // 0.6 ~ 2.4
+//         let value = v_us * 4096 / 20000
+//         setPwm(index + 7, 0, value)
+//     }
+	
     //% blockId=magicbit_stepper_degree block="Stepper 28BYJ-48|%index|degree %degree"
     //% weight=90
     export function StepperDegree(index: Steppers, degree: number): void {
