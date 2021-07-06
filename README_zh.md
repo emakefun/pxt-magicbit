@@ -1,7 +1,7 @@
   # MagicBit产品
 
 ## 购买链接
-点击链接进入淘宝购买——>>[Magicbit V2.0](https://item.taobao.com/item.htm?spm=a1z10.3-c-s.w4002-21556097790.16.545832c5PZ3CCi&id=602180967919)
+点击链接进入淘宝购买——>>[Magicbit](https://item.taobao.com/item.htm?spm=a1z10.3-c-s.w4002-21556097790.16.545832c5PZ3CCi&id=602180967919)
 
 ## 适用人群
 micro:bit多功能电机驱动扩展板适用于：小学生智力开发/教育培训机构/中小学实验室/创客教育
@@ -146,17 +146,6 @@ micro:bit多功能电机驱动扩展板与emakefun红外遥控器
 
 > RGB流水灯实验设计 ，实验结果为：板载RGB灯变为绿色流水灯  [实验源码链接](https://makecode.microbit.org/_iWvFx9bvk6gb) 
 
-## 红外接收
-![magicbit_IR_zh](magic_bit/magicbit_IR1_zh.png)
-
-* 板载红外接收头,可以通过拖拉相应的程序积木块设定相应的功能，再使用emakefun红外遥控器来进行控制。
-* 红外接收头的引脚为P1，注意红外接收头的跳线帽，在使用红外遥控功能时，红外接收头的跳线帽应当插上（默认是插上），当跳线帽拔下时，P1引脚为普通IO口引脚。
-> 红外接收实验例程
-
-![magicbit_IR_code_zh](magic_bit/magicbit_IR_code1_zh.png)
-
-> 实验现象为：红外遥控器按键`A`按下时，板载RGB灯显示红色，按键B按下时、板载RGB显示绿色，按键C按下时、板载RGB显示蓝色   [红外实验源码](https://makecode.microbit.org/_7pF0aUfqYgrV)
-
 ## RGB超声波
 ![magicbit_RGBCSB_zh](magic_bit/magicbit_RGBCSB2_zh.png)
 
@@ -190,45 +179,4 @@ micro:bit多功能电机驱动扩展板与emakefun红外遥控器
 ![magicbit_I2C_zh](magic_bit/magicbit_I2C2_zh.png)
 > 实验现象为：LCD1602液晶第一行显示**`Hello! emakefun!`**    ，第二行显示**`2019`**       [I2C实验例程源码](https://makecode.microbit.org/_4W9VYRez0Kga)
 
-## micropython语法
-如果需要支持python语法，需要[下载最新固件](https://raw.githubusercontent.com/emakefun/emakefun-docs/master/docs/micro_bit/sensorbit//firmware.hex)到microbit
-
-- 直流电机控制：
-> dcmotor_run(index, speed)    # index: 1/2/3/4（电机序号）, speed: -255~255 (电机速度)
-> dcmotor_stop(index)   # 停止直流电机 index: 1/2/3/4 (电机序号)
-
-```
-#1号电机以150的速度正转 2号电机以200的速度反转
-import motor
-magicbit = motor.init()
-magicbit.dcmotor_run(1, 150)    # 支流电机M1 正向转动速度150
-magicbit.dcmotor_run(2, -200)   # 支流电机M1 反向向转动速度200
-sleep(2000)
-magicbit.dcmotor_stop(1)
-magicbit.dcmotor_stop(2)
-```
-
-- 步进电机运动：
-> stepper(index, degree)  # index: 1/2 (步进电机序号) , degree: -360~360 (转动角度)
-```
-# 控制1号步进电机转动150度
-import motor
-magicbit = motor.init()
-magicbit.stepper(1, 150)
-```
-
-- PWM舵机控制：
-> servo(index, degree, speed=10) inedx: 1/2/3/4/5/6/7/8 (舵机序号，分别对应s1/s2/s3/s4/s5/s6/s7/s8) , degree: 0~180 (角度方位) , speed: 1~10（舵机转动速度, 可以不输入）
-
-```
-# 控制连接在S1引脚的舵机转动到90°位置
-import motor
-magicbit = motor.init()
-magicbit.servo(1, 90)
-```
-```
-#控制连接在S1引脚的舵机以 5 速度转动到90°位置
-import motor
-magicbit = motor.init()
-magicbit.servo(1, 90, speed=5)
-```
+详情请看(https://test-doc-zh-cn.readthedocs.io/projects/emakefun/zh_CN/latest/micro_bit/magicbit/)
