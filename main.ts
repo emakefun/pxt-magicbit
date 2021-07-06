@@ -445,4 +445,5 @@ export function Ultrasonic_reading_distance(): number {
 export function Setting_the_on_board_lights(offset: Offset,rgb: RgbColors, effect: rgb_ColorEffect): void {
  sensors.board_rus04_rgb(DigitalPin.P16, offset, 0, rgb, effect);
 }
+	
 }
