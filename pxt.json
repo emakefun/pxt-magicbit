@@ -10,10 +10,7 @@
     "files": [
         "README.md",
         "main.ts",
-        "shims.d.ts",
-        
-   
-       
+        "shims.d.ts",       
         "_locales/zh/magicbit-strings.json"
     ],
     "testFiles": [
