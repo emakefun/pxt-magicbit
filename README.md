@@ -18,10 +18,10 @@
 
 ## Hardware Preview
 ### Front
-![image](https://github.com/emakefun/emakefun-docs/raw/master/docs/micro_bit/magic_bit/magicbit_hardware_front.png)
+![image](https://github.com/emakefun/emakefun-docs/blob/master/docs/micro_bit/magic_bit/magicbit_hardware_front_zh.png)
 
 ### Back
-![image](https://github.com/emakefun/emakefun-docs/raw/master/docs/micro_bit/magic_bit/magicbit_hardware_back.png)
+![image](https://github.com/emakefun/emakefun-docs/blob/master/docs/micro_bit/magic_bit/magicbit_hardware_back1_zh.png)
 
 ## Blocks Preview
 ### magicbit blocks
